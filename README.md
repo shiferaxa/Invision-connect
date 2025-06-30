@@ -16,23 +16,5 @@ InvisionConnect is a scalable, customizable referral portal web application desi
 - **Infrastructure**: Terraform scripts for AWS VPC, EC2, Route 53, and SSL setup.
 - **Tools**: Visual Studio Code, GitHub, AWS CLI.
 
-## Getting Started
-1. Clone the repository: `git clone https://github.com/your-username/invisionconnect.git`
-2. Install dependencies: `npm install` (backend and frontend).
-3. Configure AWS CLI and Terraform.
-4. Customize `terraform/variables.tf` for your domain and branding.
-5. Deploy infrastructure: `terraform init && terraform apply`.
-6. Follow `docs/setup_guide.md` for detailed deployment instructions.
-
-## Documentation
-- `docs/infrastructure.md`: AWS infrastructure setup with Terraform.
-- `docs/api.md`: Backend API specifications.
-- `docs/setup_guide.md`: Guide for businesses to deploy and customize.
-- `docs/deployment.md`: Domain and SSL configuration details.
-
-## Use Cases
-- **Businesses**: Deploy a branded referral portal to boost customer acquisition.
-- **IaaS Resale**: Purchase the non-branded template to launch your own referral platform with minimal setup.
-
 ## License
 Proprietary. Contact [your-email@example.com] for licensing or purchase inquiries.
