@@ -1,0 +1,6 @@
+# VPC creation parameters
+    create public subnet 
+    create private subnet
+    create NAT gateway
+    associate route tables accordingly
+    
