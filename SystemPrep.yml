@@ -1,0 +1,16 @@
+tasks:
+  - name: cdk
+    before: |
+      npm i -g aws-cdk
+  - name: terraform
+    before: |
+      ./bin/terraform_cli_install.sh
+  # random utilities
+  - name: utils
+    before: |
+      sudp apt-get install tree
+  - name: aws-cli
+    env:
+      AWS_CLI_AUTO_PROMPT: on-partial
+    before: |
+      ./bin/aws_cli_install.sh
