@@ -14,7 +14,7 @@ InvisionConnect is a scalable, customizable referral portal web application desi
 - **Frontend**: React with AWS Amplify for seamless authentication.
 - **Database**: AWS DynamoDB for efficient referral data storage.
 - **Infrastructure**: Terraform scripts for AWS VPC, EC2, Route 53, and SSL setup.
-- **Tools**: Visual Studio Code, GitHub, AWS CLI.
+- **Tools**: Visual Studio Code, GitHub, GitPod, AWS CLI.
 
 ## License
 Proprietary. Contact [your-email@example.com] for licensing or purchase inquiries.
