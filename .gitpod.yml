@@ -15,3 +15,8 @@ tasks:
       AWS_CLI_AUTO_PROMPT: on-partial
     before: |
       ./bin/aws_cli_install.sh
+  - name: update-utils
+    before: |
+      sudo apt update &&
+      sudo apt upgrade -y 
+      
