@@ -19,4 +19,7 @@ tasks:
     before: |
       sudo apt update &&
       sudo apt upgrade -y 
+  - name: Install Amplify CLI
+    before: |
+      npm install -g @aws-amplify/cli
       
