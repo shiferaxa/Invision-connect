@@ -11,10 +11,28 @@ InvisionConnect is a scalable, customizable referral portal web application desi
 
 ## Tech Stack
 - **Backend**: Node.js/Express with AWS SDK for Cognito and DynamoDB integration.
-- **Frontend**: React with AWS Amplify for seamless authentication.
+- **Frontend**: React with AWS Amplify for seamless authentication and hosting.
 - **Database**: AWS DynamoDB for efficient referral data storage.
 - **Infrastructure**: Terraform scripts for AWS VPC, EC2, Route 53, and SSL setup.
-- **Tools**: Visual Studio Code, GitHub, GitPod, AWS CLI.
+- **Tools**: Gitpod, GitHub, AWS CLI, Amplify CLI.
+
+## Getting Started
+1. Open in Gitpod: `https://gitpod.io/#https://github.com/your-username/invisionconnect`
+2. Install dependencies: `cd backend && npm install; cd ../frontend && npm install`
+3. Configure AWS CLI and Amplify CLI in Gitpod.
+4. Customize `terraform/variables.tf` for your domain and branding.
+5. Deploy infrastructure: `cd terraform && terraform init && terraform apply`
+6. Follow `docs/setup_guide.md` for detailed deployment instructions.
+
+## Documentation
+- `docs/infrastructure.md`: AWS infrastructure setup with Terraform.
+- `docs/api.md`: Backend API specifications.
+- `docs/setup_guide.md`: Guide for businesses to deploy and customize.
+- `docs/deployment.md`: Domain and SSL configuration details.
+
+## Use Cases
+- **Businesses**: Deploy a branded referral portal to boost customer acquisition.
+- **IaaS Resale**: Purchase the non-branded template to launch your own referral platform with minimal setup.
 
 ## License
-Proprietary. Contact [your-email@example.com] for licensing or purchase inquiries.
+Proprietary. Contact [admin@invisionwireless.com] for licensing or purchase inquiries.
