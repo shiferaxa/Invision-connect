@@ -22,4 +22,7 @@ tasks:
   - name: Install Amplify CLI
     before: |
       npm install -g @aws-amplify/cli
+  - name: update-npm
+    before: |
+      npm install -g npm@11.4.2
       
