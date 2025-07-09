@@ -3,7 +3,9 @@ variable "project_name" {
     default     = "invision-connect"
 }
 
-variable "aws_region" {
-    description = "AWS region to deploy resources"
-    default     = "us-east-1"
+variable "domain_name" {
+    description = "Domain name for the project"
+    default     = "example.com"
 }
+
+
