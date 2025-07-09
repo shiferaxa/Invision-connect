@@ -64,8 +64,8 @@ resource "aws_instance" "backend" {
   user_data = <<-EOF
               #!/bin/bash
               sudo yum update -y
-              # Install NodeSource repository for Node.js 18
-              curl -fsSL https://rpm.nodesource.com/setup_18.x | sudo bash -
+              # Install NodeSource repository for Node.js 16
+              curl -fsSL https://rpm.nodesource.com/setup_16.x | sudo bash -
               sudo yum install -y nodejs
               # Verify installation
               node -v >> /home/ec2-user/install.log
