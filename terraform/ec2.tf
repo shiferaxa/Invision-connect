@@ -34,6 +34,13 @@ resource "aws_security_group" "web" {
     cidr_blocks = ["0.0.0.0/0"] # Restrict to your IP in production
   }
 
+  ingress {
+    from_port   = -1
+    to_port     = -1
+    protocol    = "icmp"
+    cidr_blocks = ["0.0.0.0/0"] # Restrict to your IP in production
+  }
+
   egress {
     from_port   = 0
     to_port     = 0
@@ -47,17 +54,22 @@ resource "aws_security_group" "web" {
 }
 
 resource "aws_instance" "backend" {
-  ami                    = data.aws_ami.amazon_linux.id
-  instance_type          = "t2.micro"
-  subnet_id              = aws_subnet.public[0].id
-  vpc_security_group_ids = [aws_security_group.web.id]
-  associate_public_ip_address    = true
-  key_name               = "invisionconnect-key" # Add key pair
+  ami                         = data.aws_ami.amazon_linux.id
+  instance_type               = "t2.micro"
+  subnet_id                   = aws_subnet.public[0].id
+  vpc_security_group_ids      = [aws_security_group.web.id]
+  associate_public_ip_address = true
+  key_name                    = "invisionconnect-key"
 
   user_data = <<-EOF
               #!/bin/bash
               sudo yum update -y
-              sudo yum install -y nodejs npm
+              # Install NodeSource repository for Node.js 18
+              curl -fsSL https://rpm.nodesource.com/setup_18.x | sudo bash -
+              sudo yum install -y nodejs
+              # Verify installation
+              node -v >> /home/ec2-user/install.log
+              npm -v >> /home/ec2-user/install.log
               EOF
 
   tags = {
