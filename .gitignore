@@ -22,3 +22,5 @@ crash.*.log
 node_modules/
 .env
 frontend/build/
+sshkeys
+sshkeys.pub
