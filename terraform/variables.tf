@@ -1,6 +1,6 @@
 variable "project_name" {
     description = "Project name for tagging resources"
-    default     = "invision-connect"
+    default     = "invisionconnect"
 }
 
 variable "domain_name" {

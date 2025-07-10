@@ -1,7 +1,7 @@
 # terraform/cognito.tf
 
 resource "aws_cognito_user_pool" "main" {
-    name = "${var.project_name}-user-pool"
+    name = "${var.project_name}_user_pool"
 
     password_policy {
         minimum_length    = 8
@@ -32,7 +32,7 @@ resource "aws_cognito_user_pool" "main" {
 }
 
 resource "aws_cognito_user_pool_client" "main" {
-    name = "${var.project_name}-client"
+    name = "${var.project_name}_client"
     user_pool_id = aws_cognito_user_pool.main.id
 
     generate_secret = false
@@ -43,7 +43,7 @@ resource "aws_cognito_user_pool_client" "main" {
 
 resource "aws_cognito_identity_pool" "main" {
   
-    identity_pool_name = "${var.project_name}-identity-pool"
+    identity_pool_name = "${var.project_name}_identity_pool"
     allow_unauthenticated_identities = false
 
     cognito_identity_providers {
