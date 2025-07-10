@@ -21,7 +21,7 @@ tasks:
       sudo apt upgrade -y 
   - name: Install Amplify CLI
     before: |
-      npm install -g @aws-amplify/cli
+      npm add --save-dev @aws-amplify/backend@latest @aws-amplify/backend-cli@latest typescript
   - name: update-npm
     before: |
       npm install -g npm@11.4.2

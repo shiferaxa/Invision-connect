@@ -1,0 +1,15 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-invisionconnect-dev-6f565-authRole",
+      "UnauthRoleArn": "arn:aws:iam::825988191458:role/amplify-invisionconnect-dev-6f565-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::825988191458:role/amplify-invisionconnect-dev-6f565-authRole",
+      "Region": "us-east-1",
+      "DeploymentBucketName": "amplify-invisionconnect-dev-6f565-deployment",
+      "UnauthRoleName": "amplify-invisionconnect-dev-6f565-unauthRole",
+      "StackName": "amplify-invisionconnect-dev-6f565",
+      "StackId": "arn:aws:cloudformation:us-east-1:825988191458:stack/amplify-invisionconnect-dev-6f565/e1298360-5d26-11f0-80a3-0e3ecb9d5173",
+      "AmplifyAppId": "dnnjox8pc4cvw"
+    }
+  }
+}
