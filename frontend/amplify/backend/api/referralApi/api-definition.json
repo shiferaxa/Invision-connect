@@ -1,0 +1,14 @@
+{
+  "type": "REST",
+  "paths": ["/referrals", "/referrals/{referrerId}"],
+  "endpoint": "http://localhost:3001",
+  "auth": {
+    "cognito": [
+      {
+        "userPoolId": "us-east-1_h7spjYzkE",
+        "awsRegion": "us-east-1",
+        "appClientId": "3ragmvhcf9finn1p38pu9bf9l5"
+      }
+    ]
+  }
+}

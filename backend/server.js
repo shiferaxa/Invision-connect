@@ -15,9 +15,9 @@ const dynamoDB = new AWS.DynamoDB.DocumentClient();
 
 // Configure Cognito JWT Verifier
 const jwtVerifier = CognitoJwtVerifier.create({
-  userPoolId: 'us-east-1_XXXXXXXXX', // Replace with your Cognito User Pool ID
+  userPoolId: 'us-east-1_h7spjYzkE', // Replace with your Cognito User Pool ID
   tokenUse: 'access', // Use 'access' or 'id' based on your setup
-  clientId: 'your-client-id', // Replace with your Cognito App Client ID
+  clientId: '3ragmvhcf9finn1p38pu9bf9l5', // Replace with your Cognito App Client ID
 });
 
 // Middleware to verify JWT

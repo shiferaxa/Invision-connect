@@ -1,0 +1,6 @@
+{
+  "resourceName": "referralApi",
+  "apiPath": "/referrals",
+  "httpEndpoint": "http://localhost:3001",
+  "authResourceName": "invisionconnect_user_pool"
+}

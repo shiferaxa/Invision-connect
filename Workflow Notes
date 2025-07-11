@@ -4,3 +4,11 @@
     create NAT gateway
     associate route tables accordingly
     
+
+    aws cognito-idp initiate-auth \
+--auth-flow USER_PASSWORD_AUTH \
+--client-id 3ragmvhcf9finn1p38pu9bf9l5 \
+--auth-parameters USERNAME=testuser,PASSWORD=Password123! \
+--region us-east-1
+
+aws cognito-idp list-users --user-pool-id us-east-1_h7spjYzkE --region us-east-1

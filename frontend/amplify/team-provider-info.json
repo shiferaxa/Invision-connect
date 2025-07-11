@@ -14,6 +14,16 @@
     "categories": {
       "auth": {
         "invconnect0b43d89c0b43d89c": {}
+      },
+      "function": {
+        "no": {
+          "deploymentBucketName": "amplify-invconnect-dev-72bb0-deployment",
+          "s3Key": "amplify-builds/no-7478706b496c4f323659-build.zip"
+        },
+        "invconnect816c24d5": {
+          "deploymentBucketName": "amplify-invconnect-dev-72bb0-deployment",
+          "s3Key": "amplify-builds/invconnect816c24d5-454d4473383871695579-build.zip"
+        }
       }
     }
   }

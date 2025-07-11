@@ -1,4 +1,5 @@
 {
+  "api": {},
   "auth": {
     "invconnect0b43d89c0b43d89c": {
       "customAuth": false,
@@ -29,6 +30,52 @@
       },
       "providerPlugin": "awscloudformation",
       "service": "Cognito"
+    }
+  },
+  "function": {
+    "invconnect816c24d5": {
+      "build": true,
+      "providerPlugin": "awscloudformation",
+      "service": "Lambda"
+    },
+    "no": {
+      "build": true,
+      "providerPlugin": "awscloudformation",
+      "service": "Lambda"
+    }
+  },
+  "parameters": {
+    "AMPLIFY_function_invconnect816c24d5_deploymentBucketName": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "invconnect816c24d5"
+        }
+      ]
+    },
+    "AMPLIFY_function_invconnect816c24d5_s3Key": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "invconnect816c24d5"
+        }
+      ]
+    },
+    "AMPLIFY_function_no_deploymentBucketName": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "no"
+        }
+      ]
+    },
+    "AMPLIFY_function_no_s3Key": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "no"
+        }
+      ]
     }
   }
 }
